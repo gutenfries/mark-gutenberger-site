@@ -1,0 +1,27 @@
+{
+	"name": "mark-gutenberger-site",
+	"version": "1.0.0",
+	"private": true,
+	"license": "MIT",
+	"author": {
+		"name": "Mark Gutenberger",
+		"email": "Mark-Gutenberger@outlook.com"
+	},
+	"scripts": {
+		"install": "bundle install",
+		"lint": "eslint .",
+		"pretty": "prettier --write .",
+		"start": "bundle exec jekyll serve",
+		"less": "lessc ./public/less/main.less > ./public/css/main.css",
+		"mincss": "uglifycss ./public/css/main.css > ./public/css/main.min.css",
+		"build": "yarn less && yarn mincss && yarn pretty && bundle exec jekyll build"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "^8.7.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"less": "^4.1.2",
+		"prettier": "^2.2.1",
+		"uglifycss": "^0.0.29"
+	}
+}
