@@ -10,11 +10,15 @@
 	"scripts": {
 		"install": "bundle install",
 		"lint": "eslint .",
+		"test": "echo \"Warn: no test specified\" && exit 0",
 		"pretty": "prettier --write .",
-		"start": "bundle exec jekyll serve",
+		"start": "yarn build && bundle exec jekyll serve",
 		"less": "lessc ./public/less/main.less > ./public/css/main.css",
 		"mincss": "uglifycss ./public/css/main.css > ./public/css/main.min.css",
-		"build": "yarn less && yarn mincss && yarn pretty && bundle exec jekyll build"
+		"build": "yarn less && yarn mincss && bundle exec jekyll build",
+		"clean": "bundle exec jekyll clean && rm -rf -f ./public/css",
+		"serve": "yarn start",
+		"deploy": "yarn build && yarn test && yarn serve"
 	},
 	"dependencies": {},
 	"devDependencies": {
