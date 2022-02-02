@@ -17,6 +17,7 @@
 		"mincss": "uglifycss ./public/css/main.css > ./public/css/main.min.css",
 		"build": "yarn less && yarn mincss && bundle exec jekyll build",
 		"clean": "bundle exec jekyll clean && rm -rf -f ./public/css",
+		"dev": "bundle exec jekyll serve --watch",
 		"serve": "yarn start",
 		"deploy": "yarn build && yarn test && yarn serve"
 	},
