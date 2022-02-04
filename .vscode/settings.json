@@ -1,5 +1,8 @@
 {
 	"files.associations": {
 		"*.html": "jekyll"
+	},
+	"material-icon-theme.files.associations": {
+		"*.html": "html"
 	}
 }
