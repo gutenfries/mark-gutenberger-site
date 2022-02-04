@@ -7,7 +7,7 @@
 	"htmlWhitespaceSensitivity": "css",
 	"insertPragma": false,
 	"jsxSingleQuote": true,
-	"printWidth": 150,
+	"printWidth": 120,
 	"quoteProps": "as-needed",
 	"semi": false,
 	"singleQuote": true,
@@ -17,9 +17,16 @@
 	"vueIndentScriptAndStyle": false,
 	"overrides": [
 		{
-			"files": "*.handlebars, *.hbs, *.html",
+			"files": "*.md, *.html",
 			"options": {
-				"singleQuote": false
+				"singleQuote": false,
+				"printWidth": 80
+			}
+		},
+		{
+			"files": "*.svg",
+			"options": {
+				"parser": "xml"
 			}
 		}
 	]
