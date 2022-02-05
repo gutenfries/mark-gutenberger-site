@@ -7,14 +7,14 @@ Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content 
 
 ## Contents
 
-- [Usage](#usage)
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
+-   [Usage](#usage)
+-   [Options](#options)
+    -   [Sidebar menu](#sidebar-menu)
+    -   [Themes](#themes)
+    -   [Reverse layout](#reverse-layout)
+-   [Development](#development)
+-   [Author](#author)
+-   [License](#license)
 
 ## Usage
 
@@ -109,15 +109,15 @@ Using Liquid you can also conditionally show the sidebar open on a per-page basi
 
 Lanyon has two branches, but only one is used for active development.
 
-- `master` for development. **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
+-   `master` for development. **All pull requests should be to submitted against `master`.**
+-   `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
 
 ## Author
 
 **Mark Otto**
 
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
+-   <https://github.com/mdo>
+-   <https://twitter.com/mdo>
 
 ## License
 

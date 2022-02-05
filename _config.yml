@@ -6,16 +6,17 @@ url: http://lanyon.getpoole.com
 baseurl: ''
 paginate: 5
 permalink: pretty
+timezone: 'America/Chicago'
+port: 8000
 
 # About/contact
 author:
- name: Mark Otto
- url: https://twitter.com/mdo
- email: markdotto@gmail.com
+    name: Mark Gutenberger
+    email: <mark-gutenberger@outlook.com>
 
 # Gems
 plugins:
- - jekyll-paginate
+    - jekyll-paginate
 
 # Custom vars
 version: 1.1.0

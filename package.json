@@ -8,18 +8,15 @@
 		"email": "Mark-Gutenberger@outlook.com"
 	},
 	"scripts": {
-		"install": "bundle install",
-		"lint": "eslint .",
-		"test": "echo \"Warn: no test specified\" && exit 0",
-		"pretty": "prettier --write .",
-		"start": "yarn build && bundle exec jekyll serve",
-		"less": "lessc ./public/less/main.less > ./public/css/main.css",
-		"mincss": "uglifycss ./public/css/main.css > ./public/css/main.min.css",
-		"build": "yarn less && yarn mincss && bundle exec jekyll build",
-		"clean": "bundle exec jekyll clean && rm -rf -f ./public/css",
-		"dev": "bundle exec jekyll serve --watch",
-		"serve": "yarn start",
-		"deploy": "yarn build && yarn test && yarn serve"
+		"install": "./scripts/install-deps.sh",
+		"pretty": "./scripts/pretty.sh",
+		"format": "./scripts/pretty.sh",
+		"lint": "./scripts/lint.sh",
+		"less": "./scripts/less.sh",
+		"build": "./scripts/build.sh",
+		"clean": "./scripts/clean.sh",
+		"start": "yarn build && && yarn dev",
+		"dev": "./scripts/dev.sh"
 	},
 	"dependencies": {},
 	"devDependencies": {
