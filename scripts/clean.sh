@@ -21,7 +21,7 @@ if ($install_deps true); then
 			if [ "$confirm" = "y" ]; then {
 				printf "\n\e[36mCleaning up temp and log files... \e[0m\n"
 				rm -rf -f ./logs/*, ./**/*.log, ./logs/*
-				printf "\n\e[36mClean complete...\e[0m\n"
+				printf "\n\e[32mClean complete...\e[0m\n"
 			}; else
 				{
 					printf "\n\e[32mClean complete...\e[0m\n"
