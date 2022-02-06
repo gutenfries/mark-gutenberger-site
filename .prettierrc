@@ -20,7 +20,7 @@
 			"files": "*.md, *.html",
 			"options": {
 				"singleQuote": false,
-				"printWidth": 80
+				"printWidth": 100
 			}
 		},
 		{

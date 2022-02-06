@@ -15,8 +15,9 @@
 		"less": "./scripts/less.sh",
 		"build": "./scripts/build.sh",
 		"clean": "./scripts/clean.sh",
-		"start": "yarn build && && yarn dev",
-		"dev": "./scripts/dev.sh"
+		"start": "yarn dev",
+		"dev": "./scripts/dev.sh",
+		"server": "yarn dev"
 	},
 	"dependencies": {},
 	"devDependencies": {
