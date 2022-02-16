@@ -8,16 +8,17 @@
 		"email": "Mark-Gutenberger@outlook.com"
 	},
 	"scripts": {
-		"install": "./scripts/install-deps.sh",
-		"pretty": "./scripts/pretty.sh",
-		"format": "./scripts/pretty.sh",
-		"lint": "./scripts/lint.sh",
-		"less": "./scripts/less.sh",
-		"build": "./scripts/build.sh",
-		"clean": "./scripts/clean.sh",
-		"start": "yarn dev",
-		"dev": "./scripts/dev.sh",
-		"server": "yarn dev"
+		"build": "bash ./scripts/build.sh",
+		"clean": "bash ./scripts/clean.sh",
+		"dev": "bash ./scripts/dev.sh",
+		"format": "bash ./scripts/pretty.sh",
+		"install": "bash ./scripts/install-deps.sh",
+		"less": "bash ./scripts/less.sh",
+		"lint": "bash ./scripts/lint.sh",
+		"pretty": "bash ./scripts/pretty.sh",
+		"serve": "yarn dev",
+		"server": "yarn dev",
+		"start": "yarn dev"
 	},
 	"dependencies": {},
 	"devDependencies": {

@@ -1,6 +1,6 @@
 # !/bin/bash
 
-source ./scripts/install-deps.sh
+source ./scripts/install-deps.sh ? ./install-deps.sh
 
 if ($install_deps true); then
 	{
