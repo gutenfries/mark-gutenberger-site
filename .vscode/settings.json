@@ -4,9 +4,5 @@
 	},
 	"material-icon-theme.files.associations": {
 		"*.html": "html"
-	},
-	"license.author": "Mark Gutenberger",
-	"license.year": "auto",
-	"license.default": "mit",
-	"license.extension": ".md"
+	}
 }
