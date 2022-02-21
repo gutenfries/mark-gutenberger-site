@@ -2,6 +2,12 @@
 layout: post
 title: Example content
 ---
+<!--
+SPDX-License-Identifier: MIT
+Author: Mark Gutenberger <mark-gutenberger@outlook.com>
+Created: 2022-02-21T01:18:13.903Z
+Modified: 2022-02-21T02:21:29.709Z
+-->
 
 <div class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.

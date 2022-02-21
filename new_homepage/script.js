@@ -1,3 +1,12 @@
+/*
+ * SPDX-License-Identifier: MIT
+ * Author: Mark Gutenberger <mark-gutenberger@outlook.com>
+ * script.js (c) 2022
+ * Desc: main js script
+ * Created: 2022-02-21T01:18:13.903Z
+ * Modified: 2022-02-21T02:17:44.829Z
+ */
+
 $(document).ready(function () {
 	// import view port library function
 	jQuery.extend(verge)
@@ -75,7 +84,7 @@ $(document).ready(function () {
 			image: ['http://2am.ninja/img/weather.jpg'],
 			site: [['CodePen', 'fa-codepen', 'https://codepen.io/MutantSpore/full/oXaoxb/']],
 		},
-		/*                    
+		/*
                         {
          title: 'Camper News',
          text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/zipline-stylize-stories-on-camper-news" target="_blank"><i>Stylize Stories on Camper News</i></a>. The user can browse recent posts from Camper News.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap, Masonary<br> <strong>Graphics Editor:</strong> Gimp, pixlr.com<br> <strong>Images:</strong> unsplash.com<br>  <strong>Data:</strong> Free Code Camp news API',
@@ -84,7 +93,7 @@ $(document).ready(function () {
          site: [
            ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/vOvBqY']
          ]
-       }, 
+       },
      */
 		{
 			title: 'Bar Graph',
@@ -102,7 +111,7 @@ $(document).ready(function () {
 			image: ['http://2am.ninja/img/heat-map.jpg'],
 			site: [['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/full/VeKNEa']],
 		},
-		/*                 
+		/*
                      {
       title: 'Force Graph',
       text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/show-relationships-with-a-force-directed-graph" target="_blank"><i>Show Relationships with a Force Directed Graph</i></a>. The user can see a Force-directed Graph that shows which campers are posting links on Camper News to which domains.</p> <strong>Code:</strong> HTML5, CSS3, D3, SVG, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br>  <strong>Data:</strong> Free Code Camp news API',
@@ -111,8 +120,8 @@ $(document).ready(function () {
       site: [
         ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/KVdbMO']
       ]
-    }, 
-    
+    },
+
     */
 		{
 			title: 'Tic-Tac-Toe',

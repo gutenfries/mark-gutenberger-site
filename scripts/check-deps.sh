@@ -1,9 +1,10 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
 # Author: Mark Gutenberger <mark-gutenberger@outlook.com>
 # check-deps.sh (c) 2022
-# Desc: checks for dependencies
-# Created:  2022-02-21T00:48:45.407Z
-# Modified: 2022-02-21T01:05:56.042Z
+# Desc: dependency check script
+# Created: 2022-02-21T01:18:13.903Z
+# Modified: 2022-02-21T02:10:13.860Z
 
 declare -g install_deps=false
 

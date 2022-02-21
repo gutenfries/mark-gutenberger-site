@@ -2,6 +2,12 @@
 layout: post
 title: Introducing Lanyon
 ---
+<!--
+SPDX-License-Identifier: MIT
+Author: Mark Gutenberger <mark-gutenberger@outlook.com>
+Created: 2022-02-21T01:18:13.903Z
+Modified: 2022-02-21T02:21:34.223Z
+-->
 
 Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
