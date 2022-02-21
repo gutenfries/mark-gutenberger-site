@@ -8,3 +8,4 @@ node_modules/
 *.map.*
 .git/
 _page/
+_site/

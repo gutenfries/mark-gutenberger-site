@@ -7,3 +7,5 @@ node_modules
 *.map
 *.map.*
 .git
+_page/
+_site/
