@@ -1,4 +1,9 @@
 # !/bin/bash
+# Author: Mark Gutenberger <mark-gutenberger@outlook.com>
+# clean.sh (c) 2022
+# Desc: checks for dependencies
+# Created:  2022-02-21T00:48:45.407Z
+# Modified: 2022-02-21T01:07:37.903Z
 
 source ./scripts/install-deps.sh ? ./install-deps.sh
 

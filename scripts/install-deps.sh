@@ -1,51 +1,56 @@
 #!/bin/bash
+# Author: Mark Gutenberger <mark-gutenberger@outlook.com>
+# install-deps.sh (c) 2022
+# Desc: checks for dependencies
+# Created:  2022-02-21T00:48:45.407Z
+# Modified: 2022-02-21T01:08:11.185Z
 
-declare -g install_deps=false
+# declare -g install_deps=false
 
-# CHECK SCRIPTS:
+# # CHECK SCRIPTS:
 
-function check-node() {
-	printf "\n\e[36mCheking for node...\e[0m\n"
-	# ugly as hell, but this is the best nullish coalescing native bash can do..
-	node_dir="{./node_modules/:-{../node_modules/:-default}}"
-	if [ -d ${node_dir} ]; then
-		{
-			printf "\n\e[32mFound node...\e[0m\n"
-			check_node=true
-		}
-	else
-		{
-			printf "\n\e[31mError: Node not found...\e[0m\n"
-			check_node=false
-		}
-	fi
+# function check-node() {
+# 	printf "\n\e[36mCheking for node...\e[0m\n"
+# 	# ugly as hell, but this is the best nullish coalescing native bash can do..
+# 	node_dir="{./node_modules/:-{../node_modules/:-default}}"
+# 	if [ -d ${node_dir} ]; then
+# 		{
+# 			printf "\n\e[32mFound node...\e[0m\n"
+# 			check_node=true
+# 		}
+# 	else
+# 		{
+# 			printf "\n\e[31mError: Node not found...\e[0m\n"
+# 			check_node=false
+# 		}
+# 	fi
 
-}
+# }
 
-function check-ruby() {
-	echo "\n\e[36mChecking for ruby...\e[0m\n"
-	bin_dir="/bin/ruby"
-	if [ -d ${bin_dir} ]; then
-		{
-			printf "\n\e[32mFound ruby...\e[0m\n"
-			check_ruby=true
-		}
-	else
-		{
-			printf "\n\e[31mError: ruby not found...\e[0m\n"
-			check_ruby=false
-		}
+# function check-ruby() {
+# 	echo "\n\e[36mChecking for ruby...\e[0m\n"
+# 	bin_dir="/bin/ruby"
+# 	if [ -d ${bin_dir} ]; then
+# 		{
+# 			printf "\n\e[32mFound ruby...\e[0m\n"
+# 			check_ruby=true
+# 		}
+# 	else
+# 		{
+# 			printf "\n\e[31mError: ruby not found...\e[0m\n"
+# 			check_ruby=false
+# 		}
 
-	fi
-}
+# 	fi
+# }
 
 # INSTALL SCRIPTS:
 
 function install-yarn-env() {
-	printf "\n\e[36mUpdating npm...\e[0m\n"
-	{
-		npm install -g npm
-	}
+	# printf "\n\e[36mUpdating npm...\e[0m\n"
+	# {
+	# 	npm install -g npm
+	# }
 	printf "\n\e[36mChecking for yarn...\e[0m\n"
 	{
 		yarn --version
@@ -128,38 +133,38 @@ function install-shfmt() {
 
 }
 
-# MAIN
-function check-env() {
-	printf "\n\e[36mChecking env... \e[0m\n"
-	{
-		check-node
-		if ($check_node true); then
-			{
-				printf "\n\e[32mNode found...\e[0m\n"
-				check-ruby
-				if ($check_ruby true); then
-					{
-						printf "\n\e[32mRuby found...\e[0m\n"
-						check_env=true
-					}
-				else
-					{
-						printf "\n\e[31mError: Ruby not found...\e[0m\n"
-						check_env=false
-						install-bundle-env
-					}
-				fi
-			}
-		else
-			{
-				printf "\n\e[31mError: Node not found...\e[0m\n"
-				install-yarn-env
-				check_env=false
+# # MAIN
+# function check-env() {
+# 	printf "\n\e[36mChecking env... \e[0m\n"
+# 	{
+# 		check-node
+# 		if ($check_node true); then
+# 			{
+# 				printf "\n\e[32mNode found...\e[0m\n"
+# 				check-ruby
+# 				if ($check_ruby true); then
+# 					{
+# 						printf "\n\e[32mRuby found...\e[0m\n"
+# 						check_env=true
+# 					}
+# 				else
+# 					{
+# 						printf "\n\e[31mError: Ruby not found...\e[0m\n"
+# 						check_env=false
+# 						install-bundle-env
+# 					}
+# 				fi
+# 			}
+# 		else
+# 			{
+# 				printf "\n\e[31mError: Node not found...\e[0m\n"
+# 				install-yarn-env
+# 				check_env=false
 
-			}
-		fi
-	}
-}
+# 			}
+# 		fi
+# 	}
+# }
 
 function install-deps-main-func() {
 	if ($check_env true); then
